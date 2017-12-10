@@ -3,14 +3,26 @@
  
 <web-app>
  
-  <servlet>
-    <servlet-name>HelloServlet</servlet-name>
-    <servlet-class>HelloServlet</servlet-class>
-  </servlet>
- 
-  <servlet-mapping>
-    <servlet-name>HelloServlet</servlet-name>
-    <url-pattern>/hello_servlet</url-pattern>
-  </servlet-mapping>
- 
+    <servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>HelloServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>UserDataEchoServlet</servlet-name>
+        <servlet-class>UserDataServlet</servlet-class>
+    </servlet>
+
+
+
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/hello_servlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UserDataEchoServlet</servlet-name>
+        <url-pattern>/user_data</url-pattern>
+    </servlet-mapping>
+
 </web-app>

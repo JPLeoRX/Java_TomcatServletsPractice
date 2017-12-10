@@ -11,7 +11,7 @@ public class HelloServlet extends HttpServlet {
 
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.setContentType("text/html");
+        resp.setContentType(ServletsUtil.RESPONSE_CONTENT_TYPE);
         PrintWriter printWriter = resp.getWriter();
         String title = "Using GET Method to Read Form Data";
 
@@ -23,7 +23,7 @@ public class HelloServlet extends HttpServlet {
 
     @Override
     public void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.setContentType("text/html");
+        resp.setContentType(ServletsUtil.RESPONSE_CONTENT_TYPE);
         PrintWriter printWriter = resp.getWriter();
         String title = "Using POST Method to Read Form Data";
 
