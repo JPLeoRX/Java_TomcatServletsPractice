@@ -1,3 +1,5 @@
+package helpers;
+
 public interface ServletsUtil {
     public static final String RESPONSE_CONTENT_TYPE = "text/html;charset=UTF-8";
 
